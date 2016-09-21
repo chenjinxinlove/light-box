@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	padding: 0;
+	margin: 0;
+	color: #252525;
+}
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	font-family:"微软雅黑";
+	font-size:14px;}
+a { text-decoration: none; color:#666;}
+a:hover {text-decoration: none;}
+.clear{ clear: both;}
+
+/*首页*/
+.homepage{ background:url(../images/homepage-bj.jpg) no-repeat;background-size:100% 100%;background-attachment: fixed;}
+.homepage-main{ width:65%; margin:auto; padding-top:5%;}
+
+.homepage-l-t img{ width:47.3%;}
+.homepage-l-b img{ width:100%;}
+
+.homepage-left{ float:left; width:59%;}
+.homepage-right{ float:right; width:38%;}
+.homepage-right img{ width:100%;}
+
+.img-left{ float: left;}
+.img-right{ float:right;}
+
+.homepage-l-b{ margin-top:5%;}
+.picture1,.picture2{ margin-top:7%;}
+.homepage-logo{ width:15%; margin:auto; margin-top:3%;}
+.homepage-logo img{ width:100%;}
+
+/*台风*/
+.typhoon{ background:url(../images/typhoon-bj.jpg) no-repeat;background-size:100% 100%;background-attachment: fixed;}
+.typhoon-main{ width:75%; margin:auto;}
+.typhoon-left{ width:74%; float: left;}
+.typhoon-left img{ width:100%;}
+.typhoon-title{ font-size:60px; color:#fff; padding-left:5%; padding-top:2%; padding-bottom:1.5%;}
+.typhoon-right{ width:20.5%; float:right; color:#fff; background:rgba(88,95,100,0.4);padding-left:1.5%; padding-right:1.5%;}
+.typhoon-right h3{ font-size:32px; padding-bottom:3%; padding-top:8%; font-weight:normal;}
+.typhoon-right p{ font-size:32px; line-height:220%;}
+
+.typhoon .product-btn{ position:fixed; right:-5%; bottom:4%; width:22%;}
+.typhoon .product-btn div{ width:32%; padding-top:4%; padding-bottom:4%; border-radius:60px; color:#fff; font-size:38px; padding-left:20%; border:1px solid #474747;}
+.typhoon .home-btn{ float:left; background:url(../images/home.png) no-repeat 30px center; background-size:20%;}
+
+/*专业图形*/
+.graph{ background:url(../images/graph-bj.jpg) no-repeat;background-size:100% 100%;background-attachment: fixed;}
+.graph-title{ width:20%; padding-top:2%; padding-left:2%;}
+.graph-title img{ width:100%;}
+.graph-btn{ width:3.5%;}
+.graph-btn .graph-btnimg{ width:100%;}
+.graph-cont{ position:relative; margin-top:1.5%; margin-left:2%;}
+.graph-btnbox{ position:absolute; left:0; top:0; width:33%; background:#edf4fc; box-shadow:1px 1px 3px #ccc; border-radius:10px; font-size:24px; color:#50504e; line-height:200%; padding-top:2.5%; padding-bottom:2%; padding-left:2%; padding-right:2%; display:none;z-index:999999}
+.graph-btnbox img{ position:absolute; width:6%; right:2%; top:2.2%;}
+
+.graph .product-btn{ position:fixed; right:-5%; bottom:4%; width:22%;}
+.graph .product-btn div{ width:32%; padding-top:4%; padding-bottom:4%; border-radius:60px; color:#fff; font-size:28px; padding-left:20%; border:1px solid #474747;}
+.graph .home-btn{ float:left; background:url(../images/home.png) no-repeat 27px center; background-size:20%;}
+
+/*日历*/
+.calendar{ background:url(../images/calendar-bj.jpg) no-repeat;background-size:100% 100%;background-attachment: fixed;}
+.calendar-title{ font-size: 64px; color:#0068a5;padding-top:2%; padding-left:2%;}
+.calendar-title span{ font-size:34px; padding-left:1.5%;}
+
+.calendar .product-btn{ position:fixed; right:-5%; bottom:4%; width:22%;}
+.calendar .product-btn div{ width:32%; padding-top:4%; padding-bottom:4%; border-radius:60px; color:#fff; font-size:28px; padding-left:20%; border:1px solid #d2c8d1;}
+.calendar .home-btn{ float:left; background:rgba(88,95,100,0.4) url(../images/home.png) no-repeat 27px center; background-size:20%;}
+
+/*蓝天*/ 
+.bluesky{ background:url(../images/blue-bj.jpg) no-repeat;background-size:100% 100%;background-attachment: fixed;}
+.graph-btnbox.blue-btnbox{background:rgba(0,0,0,0.4); color:#fff;}
+
+.bluesky .product-btn{ position:fixed; right:-5%; bottom:4%; width:22%;}
+.bluesky .product-btn div{ width:32%; padding-top:4%; padding-bottom:4%; border-radius:60px; color:#fff; font-size:28px; padding-left:20%; border:1px solid #d2c8d1;}
+.bluesky .home-btn{ float:left; background:rgba(88,95,100,0.4) url(../images/home.png) no-repeat 27px center; background-size:20%;}
+
+/*蓝天二级页*/
+.bluesky2{background:url(../images/blue2-bj.jpg) no-repeat;background-size:100% 100%;background-attachment: fixed;}
+
+.bluesky2 .product-btn{ position:fixed; right:-5%; bottom:4%; width:22%;}
+.bluesky2 .product-btn div{ width:32%; padding-top:4%; padding-bottom:4%; border-radius:60px; color:#fff; font-size:28px; padding-left:20%; border:1px solid #d2c8d1;}
+.bluesky2 .home-btn{ background:rgba(88,95,100,0.4) url(../images/home.png) no-repeat 27px center; background-size:20%;}
+.bluesky2 .back-btn{ background:rgba(88,95,100,0.4) url(../images/back.png) no-repeat 27px center; background-size:20%; margin-bottom:3%;}
+
+/*分钟级降水*/
+.rain{}
+.rain .product-btn{ position:fixed; right:4%; bottom:4%; width:24%;}
+.rain .product-btn div{ width:29%; padding-top:4%; padding-bottom:4%; border-radius:60px; color:#fff; font-size:28px; padding-left:18%; border:1px solid #d2c8d1;}
+.rain .home-btn{ background:rgba(0,0,0,0.4) url(../images/home.png) no-repeat 27px center; background-size:20%; float:left; margin-left:2%;}
+.rain .back-btn{ background:rgba(0,0,0,0.4) url(../images/back.png) no-repeat 27px center; background-size:20%; float:left;}

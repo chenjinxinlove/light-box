@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<link type="text/css" rel="stylesheet" href="css/carousel.css">
+<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+<script>
+//$(function(){
+//	
+//	$.getJSON("http://61.4.185.134/forecast_40d/freshpic.php",function(data){
+//	$(".img1").attr('src',data.rain).attr('data-source',data.rain);
+//	$(".img2").attr('src',data.tmax).attr('data-source',data.tmax);
+//	$(".img3").attr('src',data.five).attr('data-source',data.five);
+//	$(".img4").attr('src',data.seven).attr('data-source',data.seven);
+//	$(".img5").attr('src',data.cloud).attr('data-source',data.cloud);
+//	$("#poster-list").show();
+//})
+//})
+
+</script>	
+<script type="text/javascript" src="js/carousel.js"></script>
+<script type="text/javascript" src="js/lightbox.js" ></script>
+</head>
+<style>
+		.product-btn {
+			position: fixed;
+			right: 2%;
+			bottom: 2%;
+			width: 22%;
+		}
+		
+		.product-btn div {
+			width: 28%;
+			padding-top: 4%;
+			padding-bottom: 4%;
+			background: ;
+			border-radius: 60px;
+			color: #fff;
+			font-size: 18px;
+			padding-left: 20%;
+		}
+		
+		.product-btn div a {
+			display: block;
+			color: #fff;
+			text-decoration: none;
+		}
+		
+		.product-btn1 {
+			position: fixed;
+			right: 2%;
+			bottom: 2%;
+			width: 22%;
+		}
+		
+		.product-btn1 div {
+			width: 28%;
+			padding-top: 4%;
+			padding-bottom: 4%;
+			background: ;
+			border-radius: 60px;
+			color: #fff;
+			font-size: 18px;
+			padding-left: 20%;
+		}
+		
+		.product-btn1 div a {
+			display: block;
+			color: #fff;
+			text-decoration: none;
+		}
+		
+		.home-btn {
+			float: right;
+			background: rgba(0, 0, 0, 0.55) url(images/home.png) no-repeat 30px center;
+			background-size: 20%;
+		}
+		
+		#G-lightbox-mask {
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background-color: #000;
+			opacity: 0.5;
+			fliter: alpha(opacity=50%);
+			z-index: 10000;
+		}
+		
+		#G-lightbox-popup {
+			position: fixed;
+			left: 10%;
+			z-index: 1000001;
+			width: 80%;
+			height: 80%;
+		}
+		
+		#G-lightbox-popup .lightbox-pic-view {
+			position: fixed;
+			border: 5px solid #fff;
+			overflow: hidden;
+			border-radius: 3px;
+			background-color: #fff;
+			z-index: 99999999;
+			top: 18%;
+			left: 18%
+		}
+		
+		#G-lightbox-popup .lightbox-pic-view .lightbox-image {
+			display: block;
+		}
+		
+		.lightbox-close-btn {
+			width: 10%;
+			height: 10%;
+			background: url(images/close.png) no-repeat center center;
+			position: fixed;
+			right: 30px;
+			top: 30px;
+		}
+		
+		.poster-main {
+			margin: auto;
+		}
+</style>
+<body>
+<div class="graph">
+	
+	
+	<!-- 旋转木马 -->
+		<div class="J_Poster poster-main" >
+			<div class="poster-btn poster-prev-btn"></div>
+			<ul class="poster-list" id="poster-list">
+				<li class="poster-item"><a href="#"><img class="img1" src="./images/1.jpg" width="100%" height="100%" class="js-lightbox" data-role="lightbox" data-source="./images/1.jpg" data-group="group-1" data-id="kdfdfdf" data-caption="sdfsdfsd"></a></li>
+				<li class="poster-item"><a href="#"><img class="img2" src="./images/1.jpg" width="100%" height="100%" class="js-lightbox" data-role="lightbox" data-source="./images/1.jpg" data-group="group-1" data-id="kdfdfdf" data-caption="sdfsdfsd"></a></li>
+				<li class="poster-item"><a href="#"><img class="img3" src="./images/1.jpg" width="100%" height="100%" class="js-lightbox" data-role="lightbox" data-source="./images/1.jpg" data-group="group-1" data-id="kdfdfdf" data-caption="sdfsdfsd"></a></li>
+				<li class="poster-item"><a href="#"><img class="img4" src="./images/1.jpg" width="100%" height="100%" class="js-lightbox" data-role="lightbox" data-source="./images/1.jpg" data-group="group-1" data-id="kdfdfdf" data-caption="sdfsdfsd"></a></li>
+				<li class="poster-item"><a href="#"><img class="img5" src="./images/1.jpg" width="100%" height="100%" class="js-lightbox" data-role="lightbox" data-source="./images/1.jpg" data-group="group-1" data-id="kdfdfdf" data-caption="sdfsdfsd"></a></li>
+			</ul>
+			<div class="poster-btn poster-next-btn"></div>
+		</div>
+	
+	<!-- 旋转木马 -->
+    
+</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var height=$(window).height();
+			$('.graph').css('height',height);
+			$(".graph-btnimg").click(function(){
+			$('.graph-btnbox').show();
+		});
+		$(".graph-btnbox").click(function(){
+		 	$('.graph-btnbox').hide();
+		  });
+		});
+</script>
+<script>
+$(function(){
+	Carousel.init($(".J_Poster"));
+});
+</script>
+<script>
+	$(function(){
+		var lightbox = new LightBox();
+	});
+</script>
+</body>
+</html>

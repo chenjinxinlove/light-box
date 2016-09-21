@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	padding: 0;
+	margin: 0;
+	color: #252525;
+}
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	font-family:"微软雅黑";
+	font-size:14px;}
+a { text-decoration: none; color:#666;}
+a:hover {text-decoration: none;}
+.clear{ clear: both;}
+
+/*首页*/
+.homepage{ background:url(../images/homepage-bj.jpg) no-repeat;background-size:100% 100%;background-attachment: fixed;}
+.homepage-main{ width:65%; margin:auto; padding-top:5%;}
+
+.homepage-l-t img{ width:47.3%;}
+.homepage-l-b img{ width:100%;}
+
+.homepage-left{ float:left; width:59%;}
+.homepage-right{ float:right; width:38%;}
+.homepage-right img{ width:100%;}
+
+.img-left{ float: left;}
+.img-right{ float:right;}
+
+.homepage-l-b{ margin-top:5%;}
+.picture1,.picture2{ margin-top:7%;}
+.homepage-logo{ width:15%; margin:auto; margin-top:3%;}
+.homepage-logo img{ width:100%;}
+
+.calendar-title{ font-size: 64px; color:#0068a5;top:2%; padding-left:2%;position: fixed;width: 100%;}
+.calendar-title span{ font-size:34px; padding-left:1.5%;}
+
+/*蓝天*/ 
+.bluesky{ background:url(../images/blue-bj.jpg) no-repeat;background-size:100% 100%;background-attachment: fixed;}
+.graph-btnbox.blue-btnbox{background:rgba(0,0,0,0.4); color:#fff;}
+
+.bluesky .product-btn{ position:fixed; right:-5%; bottom:4%; width:22%;}
+.bluesky .product-btn div{ width:32%; padding-top:4%; padding-bottom:4%; border-radius:60px; color:#fff; font-size:28px; padding-left:20%; border:1px solid #d2c8d1;}
+.bluesky .home-btn{ float:left; background:rgba(88,95,100,0.4) url(../images/home.png) no-repeat 27px center; background-size:20%;}
+/*专业图形*/
+.graph{ background:url(../images/graph-bj.jpg) no-repeat;background-size:100% 100%;background-attachment: fixed;}
+.graph-title{ width:20%; padding-top:2%; padding-left:2%;}
+.graph-title img{ width:100%;}
+.graph-btn{ width:3.5%;}
+.graph-btn .graph-btnimg{ width:100%;}
+.graph-cont{ position:relative; margin-top:-45.5%; margin-left:4%;}
+.graph-btnbox{ position:absolute; left:0; top:0; width:33%; background:#edf4fc; box-shadow:1px 1px 3px #ccc; border-radius:10px; font-size:24px; color:#50504e; line-height:200%; padding-top:2.5%; padding-bottom:2%; padding-left:2%; padding-right:2%; display:none;z-index:999999}
+.graph-btnbox img{ position:absolute; width:6%; right:2%; top:2.2%;}
+
+.graph .product-btn{ position:fixed; right:-5%; bottom:4%; width:22%;}
+.graph .product-btn div{ width:32%; padding-top:4%; padding-bottom:4%; border-radius:60px; color:#fff; font-size:28px; padding-left:20%; border:1px solid #474747;}
+.graph .home-btn{ float:left; background:url(../images/home.png) no-repeat 27px center; background-size:20%;}
+
+
+
+
+
